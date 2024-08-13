@@ -28,7 +28,7 @@ main {
 
 aside {
   padding: 4rem;
-  background-color: bisque;
+  background-color: #FEE7D6;
   & .aside-container {
     max-width: 31rem;
     & > img {
