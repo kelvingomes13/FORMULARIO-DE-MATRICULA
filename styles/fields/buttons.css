@@ -14,7 +14,7 @@ button {
       background-color: #f3541c;
     }
   }
-  &.btn-secundary {
+  &.btn-secondary {
     margin-left: auto;
     border: 1px solid var(--text-highlight);
 
