@@ -15,7 +15,7 @@ button {
     }
   }
   &.btn-secondary {
-    margin-left: auto;
+    margin-top: 1rem;
     border: 1px solid var(--text-highlight);
 
     &:hover,
@@ -25,3 +25,4 @@ button {
     }
   }
 }
+

@@ -7,6 +7,7 @@
   --max-width: 375px;
   width: min(var(--max-width), 100% - 1.5rem * 2);
   margin-inline: auto;
+  padding-top: 1.5rem;
 }
 
 .desktop-only{
@@ -14,26 +15,29 @@
 }
 
 main {
-  overflow: auto;
-  padding: 4rem;
+  display: flex;
+  align-content: space-around;
   
+  justify-content:center;
+  overflow: auto;
+  padding: auto;
+    
   & .main-container {
     max-width: 33rem;
     margin-left: auto;
+  
   }
   & .back {
     display: flex;
     align-items: center;
     gap: .5rem;
-    margin: 1.5rem;
+    /* margin-block: 1.5rem; */
   }
   & h1 {
     font: 600 1.5rem/1.25 var(--font-family);
-    margin-bottom:  .5rem;
+    margin-bottom:  .5rem;    
   }
-  
 }
-
 
 aside {
   padding: 1.5rem;
@@ -55,6 +59,18 @@ aside {
 }
 
 
+.actions-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.75rem;
+  margin-left:none;
+  padding-bottom: 2rem;
+}
+
+
+
+
 @media (width >= 80em) {
   #app {
     display: grid;
@@ -66,14 +82,33 @@ aside {
     padding: 4rem;
     & div.center {
       justify-content:start;
-    }
-    
+    }    
   }
   .container {
     max-width: 80rem;
+    padding-top: 4rem;
+
   }
 
   .desktop-only{
     display: initial;
-  }  
+  }
+
+   & .actions-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-block: 1rem;
+    padding-bottom: 4rem;
+    
+    & .btn-secondary{
+      margin: 0;
+      margin-left: auto;
+    }
+    
+  }
 }
+
+
+
+
